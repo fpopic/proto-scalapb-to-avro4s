@@ -11,7 +11,7 @@ lazy val root = (project in file("."))
       baseDirectory.value / "protobuf"
     ),
     Compile / PB.protoSources := Seq(
-      baseDirectory.value / "protobuf" / "my_case_class_with_fields_annotation.proto"
+      baseDirectory.value / "protobuf"
     ),
     Compile / PB.targets := Seq(scalapb.gen() -> (sourceManaged in Compile).value),
     Test / PB.targets := Seq(scalapb.gen() -> (sourceManaged in Test).value)
