@@ -2,8 +2,8 @@ package com.fpopic
 
 import com.sksamuel.avro4s.{AvroSchema, FieldMapper, SnakeCase}
 import org.apache.avro.SchemaBuilder
-import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.must.Matchers
+import org.scalatest.flatspec.AnyFlatSpec
 
 
 class MyCaseClassWithFieldsAnnotationTest extends AnyFlatSpec with Matchers {
