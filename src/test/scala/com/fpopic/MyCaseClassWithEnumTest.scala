@@ -13,7 +13,7 @@ class MyCaseClassWithEnumTest extends AnyFlatSpec with Matchers {
       override def encode(e: E, schema: Schema, fieldMapper: FieldMapper): AnyRef = e.name
     }
 
-    val actualSchema = AvroSchema.apply[MyCaseClassWithEnum]
+    val actualSchema = AvroSchema[MyCaseClassWithEnum]
 
     val expectedSchema = SchemaBuilder
       .record("MyCaseClassWithFieldsAnnotation")
