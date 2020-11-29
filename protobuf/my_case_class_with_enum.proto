@@ -11,7 +11,7 @@ option (scalapb.options) = {
 };
 
 message MyCaseClassWithEnum {
-  required Color color = 1;
+  optional Color color = 1;
 }
 
 enum Color {
