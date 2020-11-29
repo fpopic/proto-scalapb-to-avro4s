@@ -16,7 +16,7 @@ class MyCaseClassWithEnumTest extends AnyFlatSpec with Matchers {
     val actualSchema = AvroSchema[MyCaseClassWithEnum]
 
     val expectedSchema = SchemaBuilder
-      .record("MyCaseClassWithFieldsAnnotation")
+      .record("MyCaseClassWithEnum")
       .namespace("com.fpopic")
       .fields()
       .optionalString("color")
